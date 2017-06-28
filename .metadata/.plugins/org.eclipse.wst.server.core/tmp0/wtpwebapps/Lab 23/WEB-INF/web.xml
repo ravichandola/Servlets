@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>Lab 23</display-name>
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+	
+	<servlet>
+		<servlet-name>logServlet </servlet-name>
+		<servlet-class>com.jlcindia.servlet.LoginServlet</servlet-class>
+	</servlet>
+
+<servlet-mapping>
+	<servlet-name>logServlet</servlet-name>
+	<url-pattern>/login.jlc</url-pattern>
+</servlet-mapping>
+
+<servlet>
+		<servlet-name>regServlet </servlet-name>
+		<servlet-class>com.jlcindia.servlet.RegisterServlet</servlet-class>
+	</servlet>
+
+<servlet-mapping>
+	<servlet-name>regServlet</servlet-name>
+	<url-pattern>/register.jlc</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+		<servlet-name>fwServlet </servlet-name>
+		<servlet-class>com.jlcindia.servlet.ForgotPwServlet</servlet-class>
+	</servlet>
+
+<servlet-mapping>
+	<servlet-name>fwServlet</servlet-name>
+	<url-pattern>/forgotpw.jlc</url-pattern>
+</servlet-mapping>
+
+</web-app>
